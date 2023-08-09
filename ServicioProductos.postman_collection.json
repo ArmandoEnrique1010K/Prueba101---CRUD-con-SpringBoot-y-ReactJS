@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "5897eb13-fce4-493a-a8dd-7a399e74b036",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20835750"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "obtenerProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/app/productos"
+					},
+					"response": []
+				},
+				{
+					"name": "agregarProducto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"P060808\",\r\n    \"nombre\": \"Iphone\",\r\n    \"oferta\": true,\r\n    \"precio_normal\": 3500.50,\r\n    \"precio_oferta\": 2500,\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/app/productos"
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerProductoPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/app/productos/30"
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarProducto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"P060803\",\r\n    \"nombre\": \"Computadora Gaming RTX\",\r\n    \"oferta\": false,\r\n    \"precio_normal\": 6000.0,\r\n    \"precio_oferta\": null,\r\n    \"estado\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/app/productos/3"
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarProducto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/app/productos/21"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

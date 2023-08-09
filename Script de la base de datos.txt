@@ -1,0 +1,10 @@
+SELECT * FROM taquistore_db.productos;
+
+INSERT INTO productos (codigo, nombre, oferta, precio_normal, precio_oferta, estado) VALUES 
+('P060801', 'Televisor', 0, 4000, null, 1),
+('P060802', 'Impresora', 0, 2000, null, 1),
+('P060803', 'Computadora', 1, 4000, 3000, 1),
+('P060804', 'Router', 0, 2500, null, 0),
+('P060805', 'Disco duro externo', 1, 400, 250, 1);
+
+SELECT * FROM taquistore_db.productos;
